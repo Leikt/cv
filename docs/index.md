@@ -8,7 +8,6 @@ Tab 1 content
 Tab 2 content
 ///
 
-
 /// admonition | Some title
 Some content
 ///

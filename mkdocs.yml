@@ -72,4 +72,5 @@ markdown_extensions:
   - pymdownx.blocks.admonition
   - pymdownx.blocks.definition
   - pymdownx.blocks.details
-  - pymdownx.blocks.tab
+  - pymdownx.blocks.tab:
+      alternate_style: true
