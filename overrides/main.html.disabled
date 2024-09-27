@@ -1,5 +1,5 @@
 {% extends "base.html" %}
 
 {% block announce %}
-<!--Place the announcement html code here-->
+Placeholder
 {% endblock %}
