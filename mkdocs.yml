@@ -1,4 +1,69 @@
-site_name: CV Robin LIORET
-site_url: https://mydomain.org/mysite
+site_name: Robin LIORET
+site_url: https://leikt.github.io/cv/
+
+copyright: >
+  Copyright &copy; 2024 Robin LIORET – <a href="#__consent">Change cookie settings</a>
+
 theme:
   name: material
+  custom_dir: overrides
+  language: fr
+  favicon: assets/logo.svg
+
+  palette:
+    - scheme: default
+      primary: green
+      toggle:
+        icon: material/brightness-4
+        name: Switch to dark mode
+
+    - scheme: slate
+      primary: green
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
+
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.prune
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - toc.integrate
+    - header.autohide
+    - announce.dismiss
+
+extra:
+  generator: false
+
+  consent: # https://squidfunk.github.io/mkdocs-material/setup/ensuring-data-privacy/#cookie-consent
+    title: Conssentement à l'utisation de cookies
+    description: >-
+      Nous utilisons des cookies pour reconnaître vos visites et vos préférences, 
+      ainsi que pour mesurer l'efficacité de notre documentation et si les utilisateurs 
+      trouvent ce qu'ils recherchent. Avec votre conssentement, vous nous aider à 
+      améliorer la documentation.
+
+    actions:
+      - accept
+      - reject
+
+  social: # https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-footer/#social-links
+    - icon: fontawesome/brands/github
+      link: https://github.com/Leikt
+    - icon: fontawesome/brands/gitlab
+      link: https://gitlab.com/leikt.solreihin
+    - icon: fontawesome/brands/linkedin
+      link: https://fr.linkedin.com/in/robin-lioret-1a278b89
+
+plugins:
+#  - privacy # https://squidfunk.github.io/mkdocs-material/setup/ensuring-data-privacy/#built-in-privacy-plugin
+  - search
