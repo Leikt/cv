@@ -67,3 +67,9 @@ extra:
 plugins:
 #  - privacy # https://squidfunk.github.io/mkdocs-material/setup/ensuring-data-privacy/#built-in-privacy-plugin
   - search
+
+markdown_extensions:
+  - pymdownx.blocks.admonition
+  - pymdownx.blocks.definition
+  - pymdownx.blocks.details
+  - pymdownx.blocks.tab

@@ -1,5 +1,30 @@
 # Welcome to MkDocs
 
+/// tab | Tab 1 title
+Tab 1 content
+///
+
+/// tab | Tab 2 title
+Tab 2 content
+///
+
+
+/// admonition | Some title
+Some content
+///
+
+/// define
+Apple
+
+- Pomaceous fruit of plants of the genus Malus in
+  the family Rosaceae.
+
+///
+
+/// details | Some summary
+Some content
+///
+
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 ## Commands
@@ -15,3 +40,4 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
     docs/
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
+
