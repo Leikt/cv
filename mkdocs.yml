@@ -8,7 +8,8 @@ theme:
   name: material
   custom_dir: overrides
   language: fr
-  favicon: assets/logo.svg
+  logo: assets/logo.svg
+  favicon: assets/favicon.svg
 
   palette:
     - scheme: default
@@ -40,6 +41,12 @@ theme:
     - toc.integrate
     - header.autohide
     - announce.dismiss
+    - content.footnote.tooltips
+    - content.tooltips
+
+extra_css:
+  - stylesheets/progress-bar-001.css
+  - stylesheets/extra.css
 
 extra:
   generator: false
@@ -69,8 +76,38 @@ plugins:
   - search
 
 markdown_extensions:
+  - attr_list
+  - abbr
+  - md_in_html
+  - footnotes
+  - markdown.extensions.attr_list
   - pymdownx.blocks.admonition
   - pymdownx.blocks.definition
   - pymdownx.blocks.details
+  - pymdownx.betterem
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.progressbar
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
   - pymdownx.blocks.tab:
       alternate_style: true
+
+watch:
+  - includes
